@@ -1,13 +1,16 @@
 """
 stimulation.py
 Monitorización de corriente/voltaje mediante INA226 (I2C).
-Con fuente regulable externa conectada directamente a los electrodos
-a través del INA226, sin DRV8833.
+Fuente regulable externa conectada a los electrodos a través del INA226,
+sin DRV8833.
 
-Configuración hardware:
-    Fuente (+) → INA226 V+/C+
-    INA226 V-/C- → Electrodo positivo
-    Electrodo negativo → GND de la fuente = GND común del sistema
+Módulo INA226 con bornes separados V-, Current (+/-) y V+:
+    V+       → electrodo positivo (mide la tensión real entregada al electrodo)
+    V-       → GND común
+    Current+ → positivo de la fuente
+    Current- → electrodo positivo
+    Electrodo negativo → GND común
+    GND de la fuente   → GND común del sistema
 
 INA226 (I2C):
     SDA → GP4
