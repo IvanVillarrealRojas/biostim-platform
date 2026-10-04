@@ -1,8 +1,8 @@
 import serial, requests, time, csv
 
 # ── Configuración ─────────────────────────────────────────────
-PICO_URL     = "http://192.168.43.208/data"   # IP de tu Pico ------------- CHANGE
-COM_PORT     = "COM8"                          # ------------- CHANGE
+PICO_URL     = "PICO_URL"   # IP de tu Pico ------------- CHANGE
+COM_PORT     = "COM_PORT"                          # ------------- CHANGE
 BAUD         = 9600
 
 V_TARGET     = 9.0     # V objetivo en el electrodo (lectura INA226) ------------- CHANGE
