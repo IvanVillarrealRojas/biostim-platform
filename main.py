@@ -15,8 +15,8 @@ import network, socket
 from machine import I2C, Pin
 
 # ── Credenciales WiFi ─────────────────────────────────────────────────────────
-SSID     = "Redmi Note 9 Pro"
-PASSWORD = "pancho1234"
+SSID     = "YOUR_SSID"
+PASSWORD = "YOUR_PASSWORD"
 
 # ── Distancias entre electrodos (mm) ─────────────────────────────────────────
 DISTANCES = {"E1-E2": 20.0, "E1-E3": 40.0, "E2-E3": 20.0}
