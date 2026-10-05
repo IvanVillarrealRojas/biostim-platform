@@ -1,4 +1,4 @@
-# biostim-platform
+# Biostim-platform
  
 **Low-cost, open-source bioelectronic platform for electrical stimulation and real-time environmental monitoring of cell-laden hydrogels.**
  
@@ -47,6 +47,8 @@ The Raspberry Pi Pico 2 W coordinates every stage of the system. The complete pi
 | GP26 | ADC | pH module output (Po) |
  
 The acquisition stage is protected against the higher-voltage stimulation stage by a cascade of series resistors, BAT54 clamp diodes, bias resistors to the 1.65 V reference, and input/output RC filtering. The physical platform is a 3D-printed resin chamber with a confined millimetric channel and an interchangeable glass-slide base for microscope compatibility.
+
+The complete electronic schematic, including the full protection cascade, is available in hardware/ as a viewable PDF. An editable EasyEDA source (schematic.epro2) is also provided. The password to open it can be requested by email at ivi.280504@gmail.com.
  
 ### Stimulation and INA226 wiring
  
@@ -81,6 +83,9 @@ biostim-platform/
 │   └── stimulation.py   INA226 voltage/current/power monitor (I2C)
 ├── dashboard/
 │   └── dashboard.html   Self-contained web interface (HTML/CSS/JS)
+├── hardware/
+│   └── schematic.pdf    Complete electronic schematic (viewable)
+│   └── schematic.epro2  Editable source (EasyEDA; password on request)
 ├── pc/
 │   └── control_GPD.py   Optional closed-loop voltage control (runs on a PC)
 ├── README.md
